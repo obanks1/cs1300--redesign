@@ -2,13 +2,148 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <div class="centered"><div class="introdiv">
+      <h1>Responsive Redesign</h1>
+      <h3 class="subtitle">a case study on responsive design</h3>
+      <div class="introcap smallshadow">
+        <h6><b>Objective:</b> analyze and identify flaws in an existing webpage, 
+          create low-fidelity and high-fidelity prototypes for various screen sizes, 
+          and build a responsive website based on those prototypes.
+        <h6><b>Subject:</b> Reuling Associates, a local engineering company</h6>
+        <div class="centered"><hr class="inlinehr"/>
+        <p class="context"><b>UI/UX (CS 1300) - Brown University - Fall 2020 </b></p>
+        <hr class="inlinehr"/></div>
+      </div>
+    </div></div>
+
+    <br>
+    <h3>Original Site: Design Problems</h3>
+    <br>
+    <div class="centered"><div class="originalsite">
+      <img src="photos/reulingannotated.png" class="originalphoto">
+      <a href="http://reulingassociates.com" target="_blank">
+        <h4>Http://ReulingAssociates.com <i class="fa fa-external-link"></i></h4>
+      </a>
+    </div></div>
+    <br>
+    <h3>Accessibility Issues</h3>
+    <br>
+    <div class="centered"><div class="accessibility">
+      <p>I used WebAIM WAVE to test the accessibility of the webpage.</p>
+      <ul>
+        <li>Error: No Page Regions “No page regions or ARIA landmarks were found.”</li>
+          <ul><li>Content is not separated into header, nav, main, footer, etc. regions</li></ul>
+        <li>Error: Suspicious alternative text</li>
+          <ul><li>The logo image is simply captioned "logo"</li></ul>
+        <li>Screen reader did not pick up on the main block of text</li>
+      </ul> 
+      <p>
+        Results: In general the accessibility was not too bad, 
+        probably because the website is so simple. I will aim to fix the errors it does have 
+        and prevent more from popping up. 
+      </p>
+    </div></div>
+    <br>
+    
+    <h3>Lofi Prototypes</h3>
+    <br>
+    <div class="centered">
+      <p style="width: 80%; text-align: center;">I used Balsamiq's low fidelity prototyping 
+        software to plan out what my redesign will look like.</p>
+    </div>
+    <br>
+    <div class="centered"><div class="lofidiv">
+      <div class="lofi div1 smallshadow"><img src="photos/lofi desktop.png" class="lofiimg desktoplofi"></div>
+      <div class="lofi div2 smallshadow"><img src="photos/lofi tablet 2.gif" class="lofiimg tabletlofi">
+        <img src="photos/lofi annotation.png" class="lofiannotation"></div>
+      <div class="lofi div3 smallshadow"><img src="photos/lofi phone 2.gif" class="lofiimg phonelofi">
+        <img src="photos/lofi annotation.png" class="lofiannotation"></div>
+    </div></div>
+
+    <h3>Hifi Prototypes</h3>
+    <br>
+    <div class="centered">
+      <p style="width: 80%; text-align: center;">I used Figma to flesh out my prototypes and 
+        added images and color to the design.</p>
+    </div>
+    <br>
+    <div class="centered"><div class="hifidiv">
+      <div class="hifi div1 smallshadow"><img src="photos/hifi desktop 3.png" class="hifiimg desktophifi"></div>
+      <div class="hifi div2 smallshadow"><img src="photos/hifi tablet 2.gif" class="hifiimg tablethifi">
+        <img src="photos/hifi annotation.png" class="lofiannotation">
+      </div>
+      <div class="hifi div3 smallshadow"><img src="photos/hifi phone 2.gif" class="hifiimg phonehifi">
+        <img src="photos/hifi annotation.png" class="lofiannotation">
+      </div>
+    </div></div>
+
+    <h3>Style Guide</h3>
+    <br>
+    <div class="centered"><p style="width: 50%; text-align: center;">Based on the hifi prototypes, I created a visual design style guide that outlines the main colors, 
+      typography, and states of the reusable components.
+      I chose the complementary colors orange and blue to provide contrast in the design, and used
+      light colors so that the text would be more readable. 
+      I made sure that the fonts and colors were practical and professional, befitting an engineering company.
+    </p></div>
+    <div class="centered"><img src="photos/style guide.png" class="styleguide"></div>
+    
+    <br>
+    <h3>Final Design</h3>
+    <br>
+    <div class="centered"><p style="width: 50%; text-align: center;">
+      The final design is useable on a variety of devices and has no accessibility errors. It 
+      responds well to changes in browser size and font size, and looks good when tested on
+      an iPad and iPhone. 
+      The website is very similar to the hifi prototypes, with only minor changes.
+      I used flexbox instead of grid layout, as it proved more easily responsive, and I changed the
+      mobile menu icon slightly for better visibility. 
+    </p></div>
+    <div class="centered"><a href="https://mighty-chamber-51699.herokuapp.com/" target="_blank">
+      <h4>New Reuling Associates Site <i class="fa fa-external-link"></i></h4>
+    </a></div>
+    <br>
+
+    <div class="centered"><div class="hifi smallshadow" style="width: 80%"><img src="photos/finaldesigndesktop.png" 
+      class="hifiimg desktophifi"></div></div>
+    <br>
+
+    <div class="centered"><div class="conclusion smallshadow">
+      <h3>Conclusion</h3>
+      <hr class="shorthr" style="width: 100%; background-color: lightgrey;">
+      <div class="conclusiongrid">
+        <div class="lessons">
+          <h6><b>Lessons Learned</b></h6>
+          <h6>This project taught me how to approach websites analytically- to examine what design and 
+            usability problems a page has and identify potential solutions. Iterating through low 
+            and high fidelity protoypes forced me to slow down my design process and approach it more critically.
+            I also learned about some common accessibility issues and practiced 
+            optimizing for mobile use.
+          </h6>
+        </div>
+        <div class="softskills">
+          <h6><b>Soft Skills:</b></h6>
+          <ul class="skillslist">
+            <li>Accessible Design</li>
+            <li>Product Analysis</li>
+            <li>Critical Thinking</li>
+          </ul></h6>
+        </div>
+        <div class="hardskills">
+          <h6><b>Hard Skills:</b></h6>
+          <ul class="skillslist">
+            <li>Low and High Fidelity Prototyping</li>
+            <li>Mobile Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div></div>
   </body>
 </html>
